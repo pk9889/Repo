@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Info - htop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background: #222;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>System Info</h1>
+    <div class="info">
+        <p><b>Name:</b> Your Full Name</p>
+        <p><b>Username:</b> system_username</p>
+        <p><b>Server Time (IST):</b> 2025-03-20 15:30:45 IST</p>
+    </div>
+
+    <h2>Top Command Output:</h2>
+    <pre>
+  top - 15:30:45 up 10 days,  5:43,  1 user,  load average: 0.12, 0.08, 0.05
+  Tasks: 150 total,   1 running, 149 sleeping,   0 stopped,   0 zombie
+  %Cpu(s):  5.2 us,  3.1 sy,  0.0 ni, 90.7 id,  0.5 wa,  0.0 hi,  0.5 si,  0.0 st
+  KiB Mem :  4000000 total,  2000000 free,  1000000 used,  1000000 buff/cache
+  KiB Swap:  2000000 total,  2000000 free,        0 used.  2500000 avail Mem 
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+  1   root      20   0  100000  20000  10000 S   0.0  0.5   0:00.01 systemd
+  2   root      20   0  200000  50000  20000 S   0.1  1.2   0:00.03 python3
+    </pre>
+
+</body>
+</html>
